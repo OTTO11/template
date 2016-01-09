@@ -28,3 +28,10 @@ view('main.html', array(
 ),'main');
 echo $result['main'];
 ```
+Вызов шаблонизатора в цикле
+```
+$sql = array(array('id' => 1,'name' => 'Вася'),array('id' => 2, 'name' => 'Дима'));
+foreach($sql as $row){
+  view('data/row.html', $row, 'rows');
+}
+```
