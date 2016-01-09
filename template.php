@@ -7,6 +7,7 @@
 
 $result = $tpls = array();
 function view($t, $d = false, $r = 1, $u = false){
+  global $tpls;
   if(!isset($tpls[$t])){
     $tpls[$t] = file_get_contents('./templates/'.$t);
   }
