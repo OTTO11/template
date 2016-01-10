@@ -24,9 +24,9 @@ function view($t, $d = false, $r = 1, $u = false){
     return $c;
   }
   global $result;
-  if(isset($result[$t])){
-    $result[$t] .= $c;
-    return;
-  }
-  $result[$t] = $c;
+	if(isset($result[$r])){
+		$result[$r] .= $c;
+		return;
+	}
+	$result[$r] = $c;
 }
